@@ -1,185 +1,32 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="A software engineer's portfolio: web applications, backend systems, skills, and selected projects."
-    />
-    <meta name="theme-color" content="#0a0c10" />
-    <title>Software Engineer — Portfolio</title>
-    <link rel="stylesheet" href="styles.css" />
-    <script src="main.js" defer></script>
-  </head>
-  <body>
-    <a class="skip-link" href="#main-content">Skip to content</a>
-
-    <header class="site-header">
-      <div class="nav-shell">
-        <a class="wordmark" href="#hero" aria-label="Portfolio home">
-          <span class="wordmark-mark" aria-hidden="true">&lt;/&gt;</span>
-          <span>Portfolio<span class="wordmark-period">.</span></span>
-        </a>
-
-        <button
-          class="menu-toggle"
-          type="button"
-          aria-expanded="false"
-          aria-controls="primary-navigation"
-          aria-label="Open navigation menu"
-        >
-          <span></span>
-          <span></span>
-        </button>
-
-        <nav class="primary-navigation" id="primary-navigation" aria-label="Main navigation">
-          <a href="#about">About</a>
-          <a href="#skills">Skills</a>
-          <a href="#projects">Projects</a>
-          <a href="#experience">Experience</a>
-          <a class="nav-contact" href="#contact">Contact <span aria-hidden="true">↗</span></a>
-        </nav>
-      </div>
-    </header>
-
-    <main id="main-content">
-      <section class="hero section-shell" id="hero" aria-labelledby="hero-title">
-        <div class="hero-copy">
-          <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Open to opportunities</p>
-          <h1 id="hero-title">Software<br /><span class="gradient-text">Engineer</span></h1>
-          <p class="hero-intro">
-            I build thoughtful web applications and reliable backend systems, turning complex
-            problems into simple, useful experiences.
-          </p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="#projects">View Projects <span aria-hidden="true">↗</span></a>
-            <a class="button button-secondary" href="#contact">Contact Me</a>
-          </div>
-          <a class="scroll-cue" href="#about"><span aria-hidden="true">↓</span> Scroll to explore</a>
-        </div>
-
-        <div class="hero-art" aria-hidden="true">
-          <div class="orbit orbit-one"></div>
-          <div class="orbit orbit-two"></div>
-          <div class="orbit orbit-three"></div>
-          <div class="hero-glow"></div>
-          <div class="code-card">
-            <div class="code-card-top"><span></span><span></span><span></span><i>build.py</i></div>
-            <div class="code-lines">
-              <p><span class="code-muted">01</span> <span class="code-purple">def</span> <span class="code-blue">build</span>():</p>
-              <p><span class="code-muted">02</span> &nbsp;&nbsp;idea = <span class="code-green">"solve"</span></p>
-              <p><span class="code-muted">03</span> &nbsp;&nbsp;system = design(idea)</p>
-              <p><span class="code-muted">04</span> &nbsp;&nbsp;<span class="code-purple">return</span> ship(system)</p>
-              <p><span class="code-muted">05</span></p>
-              <p><span class="code-muted">06</span> <span class="code-blue">build</span>()<span class="cursor">▍</span></p>
-            </div>
-            <div class="code-card-footer"><span class="footer-indicator"></span> Ready to build <span>⌘ ↵</span></div>
-          </div>
-          <span class="floating-chip chip-top">&lt; clean code /&gt;</span>
-          <span class="floating-chip chip-bottom">✳ &nbsp;Always learning</span>
-        </div>
-        <span class="hero-index" aria-hidden="true">01 — 06</span>
-      </section>
-
-      <section class="content-section section-shell" id="about" aria-labelledby="about-title">
-        <div class="section-heading">
-          <p class="eyebrow">A little about me</p>
-          <h2 id="about-title">Building with <span class="gradient-text">purpose.</span></h2>
-        </div>
-        <div class="about-layout">
-          <p class="about-lead">
-            Good software should feel effortless to use and dependable behind the scenes.
-          </p>
-          <div class="about-detail">
-            <p>
-              I’m a software engineer focused on creating practical digital products, from polished
-              web interfaces to the backend systems that power them. I enjoy breaking down tricky
-              problems, learning new tools, and making ideas work in the real world.
-            </p>
-            <p>
-              My approach is grounded in clear communication, thoughtful details, and code that’s
-              easy for a team to understand and build on.
-            </p>
-            <a class="text-link" href="#contact">Let’s work together <span aria-hidden="true">↗</span></a>
-          </div>
-        </div>
-        <div class="value-strip" aria-label="How I work">
-          <div><span class="value-number">01</span><span>Thoughtful<br />problem solving</span></div>
-          <div><span class="value-number">02</span><span>Reliable<br />engineering</span></div>
-          <div><span class="value-number">03</span><span>Continuous<br />learning</span></div>
-        </div>
-      </section>
-
-      <section class="content-section section-shell" id="skills" aria-labelledby="skills-title">
-        <div class="section-heading section-heading-row">
-          <div><p class="eyebrow">Tools of the trade</p><h2 id="skills-title">My <span class="gradient-text">toolkit.</span></h2></div>
-          <p class="section-aside">A growing set of tools for building<br />from interface to infrastructure.</p>
-        </div>
-        <div class="skills-grid">
-          <article class="skill-card"><span class="skill-index">01</span><span class="skill-icon icon-python" aria-hidden="true">Py</span><h3>Python</h3><p>Versatile scripting &amp; applications</p></article>
-          <article class="skill-card"><span class="skill-index">02</span><span class="skill-icon icon-flask" aria-hidden="true">Fl</span><h3>Flask</h3><p>Lightweight web applications</p></article>
-          <article class="skill-card"><span class="skill-index">03</span><span class="skill-icon icon-js" aria-hidden="true">JS</span><h3>JavaScript</h3><p>Interactive web experiences</p></article>
-          <article class="skill-card"><span class="skill-index">04</span><span class="skill-icon icon-sql" aria-hidden="true">⌘</span><h3>SQL</h3><p>Data querying &amp; persistence</p></article>
-          <article class="skill-card"><span class="skill-index">05</span><span class="skill-icon icon-git" aria-hidden="true">⑂</span><h3>Git</h3><p>Version control &amp; collaboration</p></article>
-          <article class="skill-card"><span class="skill-index">06</span><span class="skill-icon icon-api" aria-hidden="true">⇄</span><h3>REST API</h3><p>Service integration &amp; design</p></article>
-        </div>
-      </section>
-
-      <section class="content-section section-shell" id="projects" aria-labelledby="projects-title">
-        <div class="section-heading section-heading-row">
-          <div><p class="eyebrow">A few things I’ve made</p><h2 id="projects-title">Selected <span class="gradient-text">projects.</span></h2></div>
-          <p class="section-aside">A glimpse at what I like to<br />design, build, and improve.</p>
-        </div>
-        <div class="projects-grid">
-          <article class="project-card">
-            <div class="project-visual visual-dashboard" aria-hidden="true"><div class="dashboard-window"><div class="mock-sidebar"></div><div class="mock-content"><i></i><i></i><i></i><div class="mock-chart"><b></b><b></b><b></b><b></b><b></b><b></b></div></div></div><span class="project-count">01</span></div>
-            <div class="project-info"><div><p class="project-type">Web application · Placeholder</p><h3>Project One</h3></div><span class="project-arrow" aria-hidden="true">↗</span></div>
-            <p class="project-description">A placeholder for a web application project. Replace this with a short description of the problem and solution.</p>
-            <ul class="tag-list" aria-label="Example technologies"><li>Flask</li><li>JavaScript</li><li>SQL</li></ul>
-          </article>
-          <article class="project-card">
-            <div class="project-visual visual-api" aria-hidden="true"><div class="api-orb orb-left">{ }</div><div class="api-orb orb-center">API</div><div class="api-orb orb-right">DB</div><span class="api-line line-one"></span><span class="api-line line-two"></span><span class="project-count">02</span></div>
-            <div class="project-info"><div><p class="project-type">Backend system · Placeholder</p><h3>Project Two</h3></div><span class="project-arrow" aria-hidden="true">↗</span></div>
-            <p class="project-description">A placeholder for a backend or API project. Add the real project details when they’re ready to share.</p>
-            <ul class="tag-list" aria-label="Example technologies"><li>Python</li><li>REST API</li><li>SQL</li></ul>
-          </article>
-          <article class="project-card">
-            <div class="project-visual visual-workflow" aria-hidden="true"><div class="flow-node node-a">✳</div><div class="flow-node node-b">⌘</div><div class="flow-node node-c">✓</div><span class="flow-path path-a"></span><span class="flow-path path-b"></span><span class="project-count">03</span></div>
-            <div class="project-info"><div><p class="project-type">Developer tool · Placeholder</p><h3>Project Three</h3></div><span class="project-arrow" aria-hidden="true">↗</span></div>
-            <p class="project-description">A placeholder for a tool or workflow improvement. Use this space to highlight your approach and impact.</p>
-            <ul class="tag-list" aria-label="Example technologies"><li>JavaScript</li><li>Python</li><li>Git</li></ul>
-          </article>
-        </div>
-      </section>
-
-      <section class="content-section section-shell" id="experience" aria-labelledby="experience-title">
-        <div class="section-heading section-heading-row">
-          <div><p class="eyebrow">The path so far</p><h2 id="experience-title">Experience &amp; <span class="gradient-text">learning.</span></h2></div>
-          <p class="section-aside">Curiosity keeps the work<br />moving forward.</p>
-        </div>
-        <div class="experience-card">
-          <div class="experience-marker" aria-hidden="true"><span></span></div>
-          <div class="experience-main"><p class="experience-label">Professional journey</p><h3>Software Engineering</h3><p>Focused on building web applications, backend systems, and practical solutions to real problems.</p></div>
-          <div class="experience-note"><span class="note-mark" aria-hidden="true">✳</span><p>More details coming soon</p><span>Experience and milestones will be added here.</span></div>
-        </div>
-        <div class="learning-note"><span class="learning-symbol" aria-hidden="true">↗</span><p>Always exploring better ways to build, collaborate, and grow.</p></div>
-      </section>
-
-      <section class="contact-section section-shell" id="contact" aria-labelledby="contact-title">
-        <div class="contact-orb" aria-hidden="true"></div>
-        <p class="eyebrow">Have a good one in mind?</p>
-        <h2 id="contact-title">Let’s make<br /><span class="gradient-text">it happen.</span></h2>
-        <p class="contact-intro">Have a project, an opportunity, or just want to say hello? I’d love to hear from you.</p>
-        <a class="button button-primary contact-button" href="mailto:hello@example.com">Get in touch <span aria-hidden="true">↗</span></a>
-        <p class="email-hint">Replace <a href="mailto:hello@example.com">hello@example.com</a> with your email address.</p>
-      </section>
-    </main>
-
-    <footer class="site-footer section-shell">
-      <a class="wordmark footer-wordmark" href="#hero"><span class="wordmark-mark" aria-hidden="true">&lt;/&gt;</span><span>Portfolio<span class="wordmark-period">.</span></span></a>
-      <p>Designed &amp; built with care.</p>
-      <a class="back-to-top" href="#hero">Back to top <span aria-hidden="true">↑</span></a>
-    </footer>
-  </body>
-</html>
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Software engineer portfolio focused on web applications and backend systems.">
+  <title>Software Engineer / Field Notes</title><link rel="stylesheet" href="styles.css"><script src="main.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to content</a>
+<div class="page-frame">
+  <header class="topbar">
+    <a class="brand" href="#hero" aria-label="Field Notes home"><b>FN</b><span>FIELD NOTES</span></a>
+    <p class="topbar-status"><i></i> SYSTEM ONLINE <em>/</em> 2025.04</p>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Open navigation"><span></span><span></span></button>
+    <nav id="primary-navigation" class="navigation" aria-label="Primary navigation"><a href="#about">01 About</a><a href="#skills">02 Skills</a><a href="#projects">03 Projects</a><a href="#experience">04 Experience</a><a href="#contact">05 Contact</a></nav>
+  </header>
+  <main id="main-content">
+    <section class="hero" id="hero" aria-labelledby="hero-title">
+      <div class="hero-kicker"><span>FIELD NOTE 001</span><i></i><span>SOFTWARE / SYSTEMS</span></div>
+      <div class="hero-copy"><p class="hero-label">AVAILABLE FOR NEW BUILDS</p><h1 id="hero-title">Software<br><em>Engineer</em></h1><p class="hero-intro">I design and ship web applications and backend systems that make complicated work feel straightforward.</p><a class="text-cta" href="#projects">Read the work <i></i><span>↘</span></a></div>
+      <div class="monitor" aria-label="Interactive build monitor"><div class="monitor-head"><span>LIVE BUILD MONITOR</span><span id="monitor-clock">00:00:00</span></div><div class="monitor-map"><i class="crosshair a"></i><i class="crosshair b"></i><i class="route a"></i><i class="route b"></i><i class="node a"></i><i class="node b"></i><i class="node c"></i><small class="label a">API / 01</small><small class="label b">DB / 02</small><small class="label c">UI / 03</small></div><div class="monitor-readout"><i></i><span id="build-state">BUILDING A BETTER FLOW</span><b>98.4% <small>STABLE</small></b></div></div>
+      <div class="hero-index"><span>00</span><b>↘</b><span>06</span></div>
+    </section>
+    <section class="section about" id="about" aria-labelledby="about-title"><div class="section-rail"><span>01</span><i></i><span>ABOUT</span></div><div class="section-body about-grid"><div><p class="section-label">A PRACTICAL APPROACH</p><h2 id="about-title">Make the<br><strong>complex useful.</strong></h2></div><div class="about-copy"><p>Software is a conversation between people, systems, and constraints. My work sits in the middle: translating a real problem into an interface that feels clear and a system that stays dependable.</p><p>I care about the unglamorous details—sensible data models, readable code, fast feedback, and interfaces that do not ask users to think twice.</p><div class="coordinate">12° 58' N <em>/</em> 77° 35' E<br><small>CURIOUS BY DEFAULT</small></div></div></div></section>
+    <section class="section skills" id="skills" aria-labelledby="skills-title"><div class="section-rail"><span>02</span><i></i><span>SKILLS</span></div><div class="section-body"><div class="split-heading"><div><p class="section-label">CAPABILITY MATRIX</p><h2 id="skills-title">Tools for<br><strong>the whole route.</strong></h2></div><p class="section-note">A working set, organized by the job each tool does.</p></div><div class="skill-matrix"><div><small>A / 01</small><h3>BUILD</h3><p>Applications &amp; interfaces</p><ul><li>Python <b>01</b></li><li>Flask <b>02</b></li><li>JavaScript <b>03</b></li></ul></div><div><small>B / 02</small><h3>CONNECT</h3><p>Services &amp; data</p><ul><li>REST API <b>04</b></li><li>SQL <b>05</b></li></ul></div><div><small>C / 03</small><h3>SHIP</h3><p>Change &amp; collaboration</p><ul><li>Git <b>06</b></li><li>Documentation <b>07</b></li></ul></div></div></div></section>
+    <section class="section projects" id="projects" aria-labelledby="projects-title"><div class="section-rail"><span>03</span><i></i><span>PROJECTS</span></div><div class="section-body"><div class="split-heading"><div><p class="section-label">SELECTED CASE FILES</p><h2 id="projects-title">Work in<br><strong>progress.</strong></h2></div><p class="section-note">Three placeholders for problems, experiments, and systems worth documenting.</p></div><article class="feature-project"><div class="feature-index">CASE / 001</div><div class="feature-graphic"><strong>[</strong><div class="signal-chart"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><strong>]</strong><small>SIGNAL / ROUTE / RESPONSE</small></div><div class="feature-copy"><p>WEB APPLICATION / PLACEHOLDER</p><h3>Project One</h3><div>A featured case study slot for a product where the interface, API, and data model had to agree. Replace this with the real problem and measurable outcome.</div><a href="#contact">Request the case file <span>↗</span></a></div></article><div class="project-list"><article><b>002</b><div><p>BACKEND SYSTEM / PLACEHOLDER</p><h3>Project Two</h3><div>Describe a service, integration, or data problem solved with Python and REST API design.</div></div><span>↗</span></article><article><b>003</b><div><p>DEVELOPER TOOL / PLACEHOLDER</p><h3>Project Three</h3><div>Use this row for a workflow improvement, experiment, or small tool with a useful lesson.</div></div><span>↗</span></article></div></div></section>
+    <section class="section experience" id="experience" aria-labelledby="experience-title"><div class="section-rail"><span>04</span><i></i><span>EXPERIENCE</span></div><div class="section-body"><div class="split-heading"><div><p class="section-label">SYSTEM LOG</p><h2 id="experience-title">A route<br><strong>still unfolding.</strong></h2></div><span class="log-state"><i></i> IN PROGRESS</span></div><div class="system-log"><div><time>NOW</time><i></i><article><h3>Software Engineering</h3><p>Building web applications, backend systems, and practical solutions to real problems.</p></article><small>CURRENT FOCUS</small></div><div><time>NEXT</time><i></i><article><h3>More milestones</h3><p>Experience, collaborations, and shipped work will be added here as the route develops.</p></article><small>OPEN SLOT</small></div></div></div></section>
+    <section class="section contact" id="contact" aria-labelledby="contact-title"><div class="section-rail"><span>05</span><i></i><span>CONTACT</span></div><div class="section-body contact-grid"><div><p class="section-label">TRANSMISSION WINDOW</p><h2 id="contact-title">Send a<br><strong>signal.</strong></h2></div><div class="contact-console"><div><span>&gt; channel</span><b>OPEN</b></div><div><span>&gt; response time</span><b>HUMAN HOURS</b></div><div><span>&gt; address</span><b>hello@example.com</b></div><a href="mailto:hello@example.com">Initialize conversation <span>↗</span></a><p>Replace the placeholder address with your preferred email.</p></div></div></section>
+  </main>
+  <footer class="footer"><span>FIELD NOTES / SOFTWARE ENGINEER</span><span>END OF DOCUMENT <b>⌁</b></span></footer>
+</div>
+</body></html>
